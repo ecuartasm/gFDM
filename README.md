@@ -1,12 +1,11 @@
 # gFDM
 Ghost-filling Finite Difference Method
 
-
-1.	gFDM Implementation
+gFDM Implementation
 gFDM implementation is divided in 4 high level functions and 32 low level private functions. All functions start with the “gfdm_” prefix text. Figure 1 illustrates the pipeline for the high-level functions, starting from the NET preprocessing pipeline. The method supports the inclusion of CTI maps that can handle isotropic and anisotropic conductivity definitions. The pipe line is divided in 3 steps, namely the head model “gfdm_prepare_headmodel” routine to calculate the stiffness matrix, the “gfdm_prepare_elecs” routine to check the electrodes positions and setup the lead-pair calculations, finally, the forward solutions routines “gfdm_precalculate_leads” and “gfdm_calculate_pots” calculates the reciprocity lead pair potentials and the output potentials for a given source space respectively.
 
 
-1.1.	High level function descriptions
+High level function descriptions
 
  ![image](https://user-images.githubusercontent.com/49439997/115318697-e1e9aa80-a143-11eb-9e6d-439fe6368606.png)
 
